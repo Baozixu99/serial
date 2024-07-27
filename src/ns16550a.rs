@@ -4,7 +4,7 @@
 use core::convert::Infallible;
 use core::ptr::{read_volatile, write_volatile};
 use embedded_hal::serial::nb::{Read, Write};
-
+use embedded_hal::nb;
 pub struct Ns16550a {
     pub base: usize,
 }
